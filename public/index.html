@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sri Sri Tridandi Ashtakshari Sampat Kumar Ramanuja Jiyar Swami | Ullipallem Maha Yagnam</title>
+    
+    <!-- SEO & Open Graph for WhatsApp/Social Sharing -->
+    <meta name="description" content="Support the Ullipallem Ashtakshari Maha Yagnam, Annadanam, and Vidyadanam campaigns led by Sri Sri Sri Tridandi Ashtakshari Sampat Kumar Ramanuja Jiyar Swami.">
+    <meta name="keywords" content="Ashtakshari, Jiyar Swami, Mahayagnam, Annadanam, Ullipallem, Donation, Hindu Campaign">
+    
+    <meta property="og:title" content="Ullipallem Ashtakshari Maha Yagnam Campaign">
+    <meta property="og:description" content="Join the sacred mission! Sponsor Annadanam or Homa Gundas for the 108 Kunda Mahayagnam.">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1_sMwGbm_-wUJPODoatheNlwtLeknq4kQ">
+    <meta property="og:url" content="https://sriashtakshari.org/">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon Placeholders -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+Telugu:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ LOADER -->
+<div id="loader">
+    <div class="loader-inner">
+        <div class="om-pulse">ॐ</div>
+        <div class="loader-bar-wrap"><div class="loader-bar-fill" id="loaderBar"></div></div>
+        <p class="loader-msg">Jai Srimannarayana</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ AUDIO -->
+<button id="audioBtn" class="audio-btn" title="Toggle Music" onclick="toggleAudio()">
+    <i class="fas fa-music"></i>
+</button>
+
+<!-- ═══════════════════════════════════════════════════════ NAVBAR -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+            <span class="nav-om">ॐ</span>
+            <span class="nav-logo-text">Sri Ashtakshari Ashramamu</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="lang-btn" id="langBtn" onclick="toggleLang()">తెలుగు</button>
+            <button class="btn-donate-nav" onclick="openDonateModal()">🙏 Donate Now</button>
+            <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#about" onclick="closeMobileMenu()">About Swami</a></li>
+        <li><a href="#mission" onclick="closeMobileMenu()">Mission</a></li>
+        <li><a href="#events" onclick="closeMobileMenu()">Events</a></li>
+        <li><a href="#gallery" onclick="closeMobileMenu()">Gallery</a></li>
+        <li><a href="#donate" onclick="closeMobileMenu()">Donate</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+    <button class="btn-donate-nav full-width" onclick="openDonateModal(); closeMobileMenu()">🙏 Donate Now</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ DONOR TICKER -->
+<div class="ticker-strip">
+    <div class="ticker-label"><i class="fas fa-heart"></i> Live Blessings</div>
+    <div class="ticker-outer">
+        <div class="ticker-inner" id="tickerInner">
+            <span>Ravi Kumar from Hyderabad donated ₹5,116 — 3 mins ago &nbsp;✦&nbsp;</span>
+            <span>Lakshmi Devi from Vijayawada donated ₹10,116 — 12 mins ago &nbsp;✦&nbsp;</span>
+            <span>Srinivas Rao from Chennai donated ₹1,116 — 18 mins ago &nbsp;✦&nbsp;</span>
+            <span>Anitha from Tirupati donated ₹5,116 — 25 mins ago &nbsp;✦&nbsp;</span>
+            <span>Venkata Reddy from Bangalore donated ₹25,000 — 1 hour ago &nbsp;✦&nbsp;</span>
+            <span>Padmavathi from Vizag donated ₹1,116 — 2 hours ago &nbsp;✦&nbsp;</span>
+            <span>Ramaiah from Guntur donated ₹5,116 — 3 hours ago &nbsp;✦&nbsp;</span>
+            <span>Ravi Kumar from Hyderabad donated ₹5,116 — 3 mins ago &nbsp;✦&nbsp;</span>
+            <span>Lakshmi Devi from Vijayawada donated ₹10,116 — 12 mins ago &nbsp;✦&nbsp;</span>
+            <span>Srinivas Rao from Chennai donated ₹1,116 — 18 mins ago &nbsp;✦&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ HERO -->
+<section class="hero cinematic" id="hero">
+    <div class="hero-slideshow" id="heroSlideshow">
+        <div class="slide active bg-sl" style="background-image: url('https://drive.google.com/uc?export=view&id=1_sMwGbm_-wUJPODoatheNlwtLeknq4kQ');"></div>
+        <div class="slide bg-sl" style="background-image: url('https://drive.google.com/uc?export=view&id=1oG5UWhlDiSkpHGgN-kTCuLp2_9jknvl1');"></div>
+        <div class="slide bg-sl" style="background-image: url('https://drive.google.com/uc?export=view&id=1XzFQz_VvgEWcFarrmxmXr1prMEJswf5W');"></div>
+        <div class="video-overlay"></div>
+    </div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-mandala">
+        <div class="m-ring r1"></div>
+        <div class="m-ring r2"></div>
+        <div class="m-ring r3"></div>
+        <div class="m-ring r4"></div>
+    </div>
+    <div class="hero-content" id="heroContent">
+        <div class="hero-ornament">⸻&nbsp; ॐ &nbsp;⸻</div>
+        <p class="hero-subtitle en">A Divine Campaign Under the Blessed Guidance of</p>
+        <p class="hero-subtitle te hidden">దైవ మార్గదర్శనంలో</p>
+        <h1 class="hero-title en">
+            Sri Sri Sri Tridandi<br>
+            <span class="gold-grad">Ashtakshari Sampat Kumar</span><br>
+            Ramanuja Jiyar Swami
+        </h1>
+        <h1 class="hero-title te hidden">
+            శ్రీ శ్రీ శ్రీ త్రిదండి<br>
+            <span class="gold-grad">అష్టక్షరీ సంపత్కుమార</span><br>
+            రామానుజ జీయర్ స్వామి వారు
+        </h1>
+        <p class="hero-biruda">— Premaka Murthy —</p>
+        <p class="hero-tagline en">"Sarve Janah Sukhino Bhavantu" &nbsp;·&nbsp; May All Beings Be Happy</p>
+        <p class="hero-tagline te hidden">"సర్వేజనాః సుఖినో భవంతు"</p>
+        <div class="hero-btns">
+            <button class="btn-gold pulse" onclick="openDonateModal()">
+                <i class="fas fa-hand-holding-heart"></i>
+                <span class="en">Support the Mission</span>
+                <span class="te hidden">సేవలో భాగస్వాములవ్వండి</span>
+            </button>
+            <a href="#about" class="btn-ghost">
+                <span class="en">Know Swami</span>
+                <span class="te hidden">స్వామి గురించి</span>
+            </a>
+        </div>
+        <div class="hero-ornament bottom-orn">⸻&nbsp; ✦ &nbsp;⸻</div>
+    </div>
+    <div class="scroll-cue">
+        <span class="en">Scroll</span>
+        <div class="scroll-arrow-anim"></div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ EVENT ALERT BAR -->
+<div class="event-bar">
+    <div class="event-bar-inner">
+        <span class="event-bar-icon">🔔</span>
+        <div class="event-bar-text">
+            <strong>Ullipallem Ashtakshari Maha Yagnam</strong>
+            <span class="en"> — Apr 19–29, 2026 · 108 Yagashalas · Koti Mantra Japam</span>
+            <span class="te hidden"> — ఏప్రి 19–29, 2026 · 108 యాగశాలలు</span>
+        </div>
+        <div class="event-bar-countdown">
+            <span id="barD">--</span>d
+            <span id="barH">--</span>h
+            <span id="barM">--</span>m
+        </div>
+        <a href="#events" class="event-bar-link">Details →</a>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ ABOUT SWAMI -->
+<section class="section about-section" id="about">
+    <div class="section-divider top-divider">
+        <span class="div-line"></span><span class="div-icon">✦</span><span class="div-line"></span>
+    </div>
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">His Divine Holiness</p>
+            <h2 class="sec-title en">About Swami</h2>
+            <h2 class="sec-title te hidden">స్వామి వారి గురించి</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-photo-col reveal-left">
+                <div class="swami-frame">
+                    <div class="frame-glow"></div>
+                    <img src="https://drive.google.com/uc?export=view&id=1_sMwGbm_-wUJPODoatheNlwtLeknq4kQ"
+                         alt="Sri Sri Sri Tridandi Ashtakshari Sampat Kumar Ramanuja Jiyar Swami"
+                         class="swami-img"
+                         onerror="this.parentElement.innerHTML='<div class=\'swami-placeholder\'><span>ॐ</span></div>'">
+                    <div class="frame-border"></div>
+                </div>
+                <div class="swami-name-card">
+                    <p class="telugu-name">శ్రీ శ్రీ శ్రీ అష్టక్షరీ సంపత్కుమార రామానుజ జీయర్ స్వామి వారు</p>
+                </div>
+            </div>
+            <div class="about-info-col reveal-right">
+                <div class="biruda-badge">Premaka Murthy &nbsp;·&nbsp; ప్రేమైక మూర్తి</div>
+                <h3 class="swami-full-title en">Sri Sri Sri Tridandi Ashtakshari<br>Sampat Kumar Ramanuja Jiyar Swami</h3>
+                <div class="info-rows">
+                    <div class="info-row">
+                        <span class="info-label"><i class="fas fa-star"></i> Thiru Nakshtram</span>
+                        <span class="info-val">7 February (Annual Celebration)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label"><i class="fas fa-om"></i> Tradition</span>
+                        <span class="info-val">Sri Vaishnava Sampradaya</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label"><i class="fas fa-home"></i> Ashramamu</span>
+                        <span class="info-val">Gurukul Road, Vidyanagarpuram, Vijayawada — 12</span>
+                    </div>
+                </div>
+                <div class="taniyan-box">
+                    <div class="taniyan-label">✦ Taniyan ✦</div>
+                    <p class="taniyan-text telugu-text">
+                        [స్వామి వారి తనియన్ — to be provided by client]
+                    </p>
+                </div>
+                <p class="about-desc en">
+                    Under the divine guidance of His Holiness, this sacred campaign nurtures world peace,
+                    spiritual education, and community welfare. A true embodiment of love,
+                    Swami's mission reaches thousands through Annadanam, Vidyadanam, and the
+                    timeless teachings of Sri Vaishnava Sampradaya.
+                </p>
+                <p class="about-desc te hidden">
+                    ఆచార్య శ్రీ శ్రీశ్రీ అష్టక్షరీ సంపత్ కుమార్ జీయర్ స్వామి వారి దివ్య మార్గదర్శనంలో
+                    ఈ పవిత్ర కార్యక్రమం అన్నదానం, విద్యాదానం మరియు ధర్మ రక్షణకు అంకితమైనది.
+                </p>
+                <div class="about-action-btns">
+                    <button class="btn-gold" onclick="openDonateModal()">
+                        <i class="fas fa-hand-holding-heart"></i> Support Swami's Mission
+                    </button>
+                    <a href="#events" class="btn-ghost-sm">Upcoming Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Poorva Ashrama Timeline -->
+        <div class="timeline-section reveal-up">
+            <h3 class="timeline-title en">Poorva Ashrama — Life Journey</h3>
+            <h3 class="timeline-title te hidden">పూర్వ ఆశ్రమ జీవిత ప్రయాణం</h3>
+            <div class="timeline">
+                <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><h4>Birth & Early Life</h4><p>Born into a pious family, showing early signs of deep devotion.</p></div></div>
+                <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><h4>Spiritual Initiation</h4><p>Began formal Vedic studies under revered acharyas.</p></div></div>
+                <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><h4>Sannyasa Deeksha</h4><p>Embraced the monastic order (Tridandi Sannyasa).</p></div></div>
+                <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><h4>Peethadhipathi</h4><p>Established the Sri Ashtakshari Ashramamu to serve society.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 10. Divya Desa Yatra Map -->
+        <div class="yatra-section reveal-up">
+            <h3 class="timeline-title en">Divya Desa Yatra</h3>
+            <h3 class="timeline-title te hidden">దివ్య దేశ యాత్ర</h3>
+            <p class="yatra-desc en">Pilgrimage to the 108 Sacred Temples</p>
+            <div class="yatra-map-box">
+                <div class="yatra-bg-map"><i class="fas fa-map-marked-alt text-watermark"></i></div>
+                <div class="yatra-grid">
+                    <div class="yatra-node"><i class="fas fa-om"></i> Badrinath</div>
+                    <div class="yatra-node"><i class="fas fa-om"></i> Srirangam</div>
+                    <div class="yatra-node"><i class="fas fa-om"></i> Tirupati</div>
+                    <div class="yatra-node"><i class="fas fa-om"></i> Kanchipuram</div>
+                    <div class="yatra-node"><i class="fas fa-om"></i> Mathura</div>
+                    <div class="yatra-node"><i class="fas fa-plus"></i> 103 More Divya Desams</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ MISSION -->
+<section class="section mission-section" id="mission">
+    <div class="mission-bg-pattern"></div>
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">Seva & Service</p>
+            <h2 class="sec-title en">The Sacred Mission</h2>
+            <h2 class="sec-title te hidden">పవిత్ర మిషన్</h2>
+            <p class="sec-subtitle en">Every action dedicated to the welfare of all beings</p>
+        </div>
+        <div class="mission-grid">
+            <div class="mission-card reveal-up" style="--d:0s">
+                <div class="mission-icon-wrap"><div class="mission-icon">🍛</div></div>
+                <h3 class="en">Annadanam</h3>
+                <h3 class="te hidden">అన్నదానం</h3>
+                <p class="en">Sacred feeding of devotees and the underprivileged. Hunger is the first obstacle to spiritual growth — we remove it.</p>
+                <p class="te hidden">భక్తులకు మరియు పేదలకు పవిత్రమైన అన్నం అందించడం.</p>
+            </div>
+            <div class="mission-card reveal-up" style="--d:0.1s">
+                <div class="mission-icon-wrap"><div class="mission-icon">📿</div></div>
+                <h3 class="en">Dharma Rakshana</h3>
+                <h3 class="te hidden">ధర్మ రక్షణ</h3>
+                <p class="en">Protecting and propagating Vedic heritage and Sri Vaishnava traditions for generations to come.</p>
+                <p class="te hidden">వేద వారసత్వం మరియు శ్రీ వైష్ణవ సంప్రదాయాలను కాపాడడం.</p>
+            </div>
+            <div class="mission-card reveal-up" style="--d:0.2s">
+                <div class="mission-icon-wrap"><div class="mission-icon">🎓</div></div>
+                <h3 class="en">Vidyadanam</h3>
+                <h3 class="te hidden">విద్యాదానం</h3>
+                <p class="en">Supporting students in gurukulas who learn traditional scriptures, Vedic chanting, and sacred knowledge.</p>
+                <p class="te hidden">గురుకులాల్లో సంప్రదాయ శాస్త్రాలు నేర్చుకునే విద్యార్థులకు మద్దతు.</p>
+            </div>
+            <div class="mission-card reveal-up" style="--d:0.3s">
+                <div class="mission-icon-wrap"><div class="mission-icon">🌏</div></div>
+                <h3 class="en">World Peace</h3>
+                <h3 class="te hidden">ప్రపంచ శాంతి</h3>
+                <p class="en">Through Mahayagnas, Koti Mantra Japam, and sacred Homas — invoking divine blessings for universal peace.</p>
+                <p class="te hidden">మహాయజ్ఞాలు, మంత్ర జపం ద్వారా ప్రపంచ శాంతి కోసం ప్రార్థన.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ SASTI POORTHI -->
+<section class="section sasti-section" id="sasti">
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">A Grand Milestone</p>
+            <h2 class="sec-title en">Sasti Poorthi Mahosthavam</h2>
+            <h2 class="sec-title te hidden">షష్ఠిపూర్తి మహోత్సవం</h2>
+            <p class="sec-subtitle en">The Sacred Celebration of Swami's 60th Year</p>
+        </div>
+        <div class="sasti-grid">
+            <div class="sasti-video reveal-left">
+                <div class="iframe-wrap">
+                    <iframe src="https://drive.google.com/file/d/1Gag7aeTijbhyOIHrNonriMy8n6fSxpcf/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="video-cap en">Abhishekam Ceremony — Sasti Poorthi Mahosthavam</p>
+                <p class="video-cap te hidden">అభిషేక కార్యక్రమం — షష్ఠిపూర్తి మహోత్సవం</p>
+            </div>
+            <div class="sasti-info reveal-right">
+                <div class="sasti-badge-box">ṣaṣṭhi pūrti</div>
+                <h3 class="en">60 Years of Divine Seva</h3>
+                <h3 class="te hidden">60 సంవత్సరాల దివ్య సేవ</h3>
+                <p class="en">
+                    The Sasti Poorthi Mahosthavam marks the auspicious completion of Swami's 60th year —
+                    a once-in-a-lifetime celebration. The sacred Abhishekam ceremony, witnessed by
+                    thousands of devout followers, stands as a testimony to the boundless love
+                    and reverence that flows from every heart touched by Swami's grace.
+                </p>
+                <p class="te hidden">
+                    షష్ఠిపూర్తి మహోత్సవం స్వామి వారి 60వ సంవత్సరం పూర్తిని సూచిస్తుంది.
+                    వేలాది భక్తుల సమక్షంలో జరిగిన పవిత్ర అభిషేక కార్యక్రమం అనితర సాధ్యమైనది.
+                </p>
+                <div class="sasti-stats">
+                    <div class="s-stat">
+                        <span class="s-num">1000+</span>
+                        <span class="s-lbl en">Devotees Present</span>
+                        <span class="s-lbl te hidden">భక్తులు</span>
+                    </div>
+                    <div class="s-stat">
+                        <span class="s-num">60</span>
+                        <span class="s-lbl en">Years of Seva</span>
+                        <span class="s-lbl te hidden">సేవా సంవత్సరాలు</span>
+                    </div>
+                    <div class="s-stat">
+                        <span class="s-num">108</span>
+                        <span class="s-lbl en">Sacred Abhishekams</span>
+                        <span class="s-lbl te hidden">అభిషేకాలు</span>
+                    </div>
+                </div>
+                <button class="btn-gold" onclick="openDonateModal()">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span class="en">Honour This Journey</span>
+                    <span class="te hidden">ఈ ప్రయాణాన్ని సత్కరించండి</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ EVENTS -->
+<section class="section events-section" id="events">
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">Don't Miss It</p>
+            <h2 class="sec-title en">Upcoming Sacred Events</h2>
+            <h2 class="sec-title te hidden">రానున్న పవిత్ర కార్యక్రమాలు</h2>
+        </div>
+
+        <!-- Big Countdown -->
+        <div class="countdown-card reveal-up">
+            <p class="cd-title en">Ullipallem Ashtakshari Maha Yagnam Begins In</p>
+            <p class="cd-title te hidden">ఉల్లిపాలెం అష్టాక్షరి మహా యజ్ఞం మొదలవుతుంది</p>
+            <div class="cd-grid">
+                <div class="cd-unit">
+                    <div class="cd-num" id="cDays">00</div>
+                    <div class="cd-lbl en">Days</div>
+                    <div class="cd-lbl te hidden">రోజులు</div>
+                </div>
+                <div class="cd-colon">:</div>
+                <div class="cd-unit">
+                    <div class="cd-num" id="cHours">00</div>
+                    <div class="cd-lbl en">Hours</div>
+                    <div class="cd-lbl te hidden">గంటలు</div>
+                </div>
+                <div class="cd-colon">:</div>
+                <div class="cd-unit">
+                    <div class="cd-num" id="cMins">00</div>
+                    <div class="cd-lbl en">Minutes</div>
+                    <div class="cd-lbl te hidden">నిమిషాలు</div>
+                </div>
+                <div class="cd-colon">:</div>
+                <div class="cd-unit">
+                    <div class="cd-num" id="cSecs">00</div>
+                    <div class="cd-lbl en">Seconds</div>
+                    <div class="cd-lbl te hidden">సెకన్లు</div>
+                </div>
+            </div>
+            <p class="cd-date">April 19 — 29, 2026 &nbsp;·&nbsp; Ullipallem Divya Kshetram</p>
+            <button class="btn-gold" onclick="openDonateModal()">
+                <i class="fas fa-hands-praying"></i>
+                <span class="en">Support This Yagnam</span>
+                <span class="te hidden">ఈ యజ్ఞానికి మద్దతు ఇవ్వండి</span>
+            </button>
+        </div>
+
+        <!-- Event Cards -->
+        <div class="events-grid">
+            <div class="event-card featured-ev reveal-up" style="--d:0s">
+                <div class="ev-ribbon">Featured Event</div>
+                <div class="ev-date-badge">
+                    <span class="ev-month">APR</span>
+                    <span class="ev-day">19–29</span>
+                    <span class="ev-year">2026</span>
+                </div>
+                <h3 class="en">Srimannarayana Mahayagnam</h3>
+                <h3 class="te hidden">శ్రీమన్నారాయణ మహాయజ్ఞం</h3>
+                <p class="ev-subtitle">Ashtakshari Maha Homa</p>
+                <ul class="ev-details">
+                    <li><i class="fas fa-map-marker-alt"></i> Ullipallem, Divya Kshetram</li>
+                    <li><i class="fas fa-fire"></i> 13 Yagashalas · 108 Homa Gundas</li>
+                    <li><i class="fas fa-om"></i> Koti Mantra Japam & Havanam</li>
+                    <li><i class="fas fa-users"></i> Peethadhipathis from across India</li>
+                    <li><i class="fas fa-book-open"></i> Vishnu Sahasranama Parayanam</li>
+                </ul>
+                <div class="ev-purpose en">World Peace · Dharma Rakshana · Sarva Mangalam</div>
+                <button class="btn-gold full-w" onclick="openDonateModal()">
+                    <i class="fas fa-hand-holding-heart"></i> Support This Event
+                </button>
+            </div>
+
+            <div class="event-card reveal-up" style="--d:0.15s">
+                <div class="ev-date-badge past-ev">
+                    <span class="ev-month">FEB</span>
+                    <span class="ev-day">07</span>
+                    <span class="ev-year">2026</span>
+                </div>
+                <h3 class="en">Thiru Nakshtram Celebration</h3>
+                <h3 class="te hidden">తిరు నక్షత్ర ఉత్సవం</h3>
+                <p class="ev-subtitle">Annual Birth Star Celebration</p>
+                <ul class="ev-details">
+                    <li><i class="fas fa-map-marker-alt"></i> Sri Ashtakshari Ashramamu, Vijayawada</li>
+                    <li><i class="fas fa-clock"></i> 9:00 AM onwards</li>
+                    <li><i class="fas fa-users"></i> Sri Vaishnava Gosti Program</li>
+                </ul>
+                <div class="ev-status-done">✓ Completed</div>
+            </div>
+
+            <div class="event-card reveal-up" style="--d:0.3s">
+                <div class="ev-date-badge past-ev">
+                    <span class="ev-month">APR</span>
+                    <span class="ev-day">11</span>
+                    <span class="ev-year">2026</span>
+                </div>
+                <h3 class="en">Bhikshatana — Agirippalli</h3>
+                <h3 class="te hidden">బిక్షాటన — ఆగిరిపల్లి</h3>
+                <p class="ev-subtitle">Sacred Alms-Seeking Procession</p>
+                <ul class="ev-details">
+                    <li><i class="fas fa-map-marker-alt"></i> Agirippalli</li>
+                    <li><i class="fas fa-walking"></i> Street procession with devotees</li>
+                    <li><i class="fas fa-music"></i> Nadaswaram & traditional music</li>
+                </ul>
+                <div class="ev-status-done">✓ Completed</div>
+            </div>
+        </div>
+
+        <!-- 16. RSVP Form -->
+        <div class="rsvp-box reveal-up">
+            <div class="rsvp-content">
+                <h3 class="en">RSVP for Mahayagnam</h3>
+                <h3 class="te hidden">మహాయజ్ఞానికి మీ హాజరు</h3>
+                <p class="en">Please register to help us prepare annadanam and accommodations.</p>
+                <form class="rsvp-form" onsubmit="submitRSVP(event)">
+                    <div class="r-row">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="tel" placeholder="WhatsApp No." required>
+                    </div>
+                    <div class="r-row">
+                        <input type="number" placeholder="Number of Attendees" min="1" required>
+                        <select required>
+                            <option value="">Expected Arrival Date</option>
+                            <option>April 19</option>
+                            <option>April 24</option>
+                            <option>April 28 (Poornahuti)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-gold"><i class="fas fa-calendar-check"></i> Register Attendance</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ GALLERY -->
+<section class="section gallery-section" id="gallery">
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">Divine Moments</p>
+            <h2 class="sec-title en">Sacred Gallery</h2>
+            <h2 class="sec-title te hidden">పవిత్ర చిత్రమాల</h2>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="g-item tall" data-index="0" data-src="https://drive.google.com/uc?export=view&id=1_sMwGbm_-wUJPODoatheNlwtLeknq4kQ" data-cap="Official Thiru Nakshtram Poster">
+                <img src="https://drive.google.com/uc?export=view&id=1_sMwGbm_-wUJPODoatheNlwtLeknq4kQ" alt="Official Poster" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">Official Poster</span></div>
+            </div>
+            <div class="g-item" data-index="1" data-src="https://drive.google.com/uc?export=view&id=1acKGoi72iXDf-jvisgFCcnruiptA6QwO" data-cap="Press Conference — Pamphlet Release">
+                <img src="https://drive.google.com/uc?export=view&id=1acKGoi72iXDf-jvisgFCcnruiptA6QwO" alt="Press Conference" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">Press Conference</span></div>
+            </div>
+            <div class="g-item" data-index="2" data-src="https://drive.google.com/uc?export=view&id=1xFZADampFKRkpoH5fo4dJFJf8zvh0HIV" data-cap="Swami with Tirumala Jiyar Swamis">
+                <img src="https://drive.google.com/uc?export=view&id=1xFZADampFKRkpoH5fo4dJFJf8zvh0HIV" alt="With Jiyar Swamis" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">With Tirumala Jiyar Swamis</span></div>
+            </div>
+            <div class="g-item" data-index="3" data-src="https://drive.google.com/uc?export=view&id=1XzFQz_VvgEWcFarrmxmXr1prMEJswf5W" data-cap="Bhikshatana — Agirippalli">
+                <img src="https://drive.google.com/uc?export=view&id=1XzFQz_VvgEWcFarrmxmXr1prMEJswf5W" alt="Bhikshatana" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">Bhikshatana</span></div>
+            </div>
+            <div class="g-item" data-index="4" data-src="https://drive.google.com/uc?export=view&id=1oG5UWhlDiSkpHGgN-kTCuLp2_9jknvl1" data-cap="Sacred Procession">
+                <img src="https://drive.google.com/uc?export=view&id=1oG5UWhlDiSkpHGgN-kTCuLp2_9jknvl1" alt="Sacred Procession" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">Sacred Procession</span></div>
+            </div>
+            <div class="g-item" data-index="5" data-src="https://drive.google.com/uc?export=view&id=1Wu3IWLIYKCZMsron-9DYmCfV5qRxnf4V" data-cap="Procession with Nadaswaram">
+                <img src="https://drive.google.com/uc?export=view&id=1Wu3IWLIYKCZMsron-9DYmCfV5qRxnf4V" alt="Procession with Music" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">Procession with Nadaswaram</span></div>
+            </div>
+            <div class="g-item" data-index="6" data-src="https://drive.google.com/uc?export=view&id=1L3t6oi14TfcUejjTEEvUct-2KV2lXwnP" data-cap="Devotees in Procession">
+                <img src="https://drive.google.com/uc?export=view&id=1L3t6oi14TfcUejjTEEvUct-2KV2lXwnP" alt="Devotees" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">Devotees in Procession</span></div>
+            </div>
+            <div class="g-item" data-index="7" data-src="https://drive.google.com/uc?export=view&id=1ygcg4dLsKbPLhbthMgwijcv65_M5pxsD" data-cap="Bhikshatana Blessings">
+                <img src="https://drive.google.com/uc?export=view&id=1ygcg4dLsKbPLhbthMgwijcv65_M5pxsD" alt="Bhikshatana Blessings" loading="lazy">
+                <div class="g-overlay"><i class="fas fa-expand-alt"></i><span class="en">Bhikshatana Blessings</span></div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lb-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+            <button class="lb-prev" onclick="lightboxNav(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="lb-next" onclick="lightboxNav(1)"><i class="fas fa-chevron-right"></i></button>
+            <div class="lb-inner">
+                <img id="lbImg" src="" alt="">
+                <p id="lbCap" class="lb-cap"></p>
+            </div>
+        </div>
+
+        <!-- Videos -->
+        <div class="videos-header">
+            <h3 class="en">Sacred Videos</h3>
+            <h3 class="te hidden">పవిత్ర వీడియోలు</h3>
+        </div>
+        <div class="videos-grid">
+            <div class="v-item reveal-up" style="--d:0s">
+                <div class="v-wrap">
+                    <iframe src="https://drive.google.com/file/d/1Gag7aeTijbhyOIHrNonriMy8n6fSxpcf/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="v-cap en">Sasti Poorthi — Abhishekam Ceremony</p>
+                <p class="v-cap te hidden">షష్ఠి పూర్తి — అభిషేక కార్యక్రమం</p>
+            </div>
+            <div class="v-item reveal-up" style="--d:0.1s">
+                <div class="v-wrap">
+                    <iframe src="https://drive.google.com/file/d/1AYBeKgeaSuWIHL4_mflbek36NzIQvRZT/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="v-cap en">Bhikshatana at Celebration Mandapam</p>
+                <p class="v-cap te hidden">ఉత్సవ మండపంలో బిక్షాటన</p>
+            </div>
+            <div class="v-item reveal-up" style="--d:0.2s">
+                <div class="v-wrap">
+                    <iframe src="https://drive.google.com/file/d/1Ye3mkzTGfCrLIT8N_OpQqJVIpRAAJdZE/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="v-cap en">Bhikshatana — Hyderabad</p>
+                <p class="v-cap te hidden">బిక్షాటన — హైదరాబాద్</p>
+            </div>
+            <div class="v-item reveal-up" style="--d:0.3s">
+                <div class="v-wrap">
+                    <iframe src="https://drive.google.com/file/d/1IH-zj3SKh3Wfg_GxBlffNMoqx7bzQb7R/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="v-cap en">Bhikshatana Street Procession</p>
+                <p class="v-cap te hidden">బిక్షాటన ఊరేగింపు</p>
+            </div>
+            <div class="v-item reveal-up" style="--d:0.4s">
+                <div class="v-wrap">
+                    <iframe src="https://drive.google.com/file/d/1vE1XvRRQ2AvKqdE9GmehR-T-gfL0Lm2L/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="v-cap en">Bhikshatana — Sacred Town Journey</p>
+                <p class="v-cap te hidden">బిక్షాటన — పవిత్ర పట్టణ యాత్ర</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ FUNDRAISER PROGRESS -->
+<section class="section fundraiser-section">
+    <div class="container">
+        <div class="fundraiser-wrap">
+            <div class="fundraiser-left reveal-left">
+                <p class="sec-label">Together We Can</p>
+                <h2 class="sec-title en">Fundraising Progress</h2>
+                <h2 class="sec-title te hidden">నిధుల సేకరణ పురోగతి</h2>
+                <div class="fund-stats">
+                    <div class="fund-stat">
+                        <div class="fund-num" id="raisedDisplay">₹0</div>
+                        <div class="fund-lbl en">Raised</div>
+                        <div class="fund-lbl te hidden">సేకరించిన నిధులు</div>
+                    </div>
+                    <div class="fund-divider">of</div>
+                    <div class="fund-stat">
+                        <div class="fund-num">₹5,00,000</div>
+                        <div class="fund-lbl en">Goal</div>
+                        <div class="fund-lbl te hidden">లక్ష్యం</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+                    </div>
+                    <span class="progress-pct" id="progressPct">0%</span>
+                </div>
+                <div class="donor-count-row">
+                    <i class="fas fa-users"></i>
+                    <span id="donorCountDisplay">0</span>
+                    <span class="en"> devoted contributors and counting</span>
+                    <span class="te hidden"> భక్తుల దానం</span>
+                </div>
+                <p class="fund-note en">Every rupee fuels the sacred Mahayagnam and our community seva programs.</p>
+                <button class="btn-gold" onclick="openDonateModal()">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span class="en">Contribute Now</span>
+                    <span class="te hidden">ఇప్పుడే దానం చేయండి</span>
+                </button>
+            </div>
+            <div class="fundraiser-right reveal-right">
+                <div class="impact-box">
+                    <h3 class="en">Your Impact Calculator</h3>
+                    <h3 class="te hidden">మీ సహకారం యొక్క ప్రభావం</h3>
+                    <p class="en">See what your donation achieves</p>
+                    <div class="slider-wrap">
+                        <input type="range" id="impactSlider" min="1116" max="50000" step="100" value="5116" oninput="updateImpact(this.value)">
+                        <div class="impact-amt">₹<span id="impactVal">5,116</span></div>
+                    </div>
+                    <div class="impact-result-box" id="impactResult">
+                        <div class="impact-emoji">🍛</div>
+                        <p id="impactText" class="en">Sponsors meals for 50 devotees for one full day through Annadanam</p>
+                    </div>
+                    <button class="btn-gold full-w" onclick="donateImpact()">
+                        <span class="en">Donate This Amount</span>
+                        <span class="te hidden">ఈ మొత్తం దానం చేయండి</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 45. Fund Utilization Breakdown Chart -->
+        <div class="fund-chart-row reveal-up">
+            <div class="chart-info">
+                <h3 class="en">Fund Utilization Breakdown</h3>
+                <h3 class="te hidden">నిధుల వినియోగం</h3>
+                <p class="en">Ensuring transparency in every rupee donated to the campaign.</p>
+                <ul class="chart-legend">
+                    <li><span class="c-dot" style="background:var(--primary-dark)"></span> 40% — Annadanam (Food for Devotees)</li>
+                    <li><span class="c-dot" style="background:var(--gold)"></span> 30% — Yagnam & Homa Gundas</li>
+                    <li><span class="c-dot" style="background:#8bc34a"></span> 20% — Vidyadanam (Gurukulas)</li>
+                    <li><span class="c-dot" style="background:#0288d1"></span> 10% — Campaign & Maintenance</li>
+                </ul>
+            </div>
+            <div class="pie-chart-wrap">
+                <div class="pie-chart"></div>
+                <div class="pie-inner"><span>100%</span><br>Transparent</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ DONATE -->
+<section class="section donate-section" id="donate">
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">Seva Opportunity</p>
+            <h2 class="sec-title en">Support the Cause</h2>
+            <h2 class="sec-title te hidden">కారణానికి మద్దతు ఇవ్వండి</h2>
+            <p class="sec-subtitle en">Choose the seva that speaks to your heart</p>
+        </div>
+
+        <!-- Tier Cards -->
+        <div class="tiers-grid">
+            <div class="tier-card reveal-up" style="--d:0s" onclick="selectTier(1116)">
+                <div class="tier-emoji">🌸</div>
+                <div class="tier-amt">₹1,116</div>
+                <h3 class="tier-name en">Pushpa Kainkaryam</h3>
+                <h3 class="tier-name te hidden">పుష్ప కైంకర్యం</h3>
+                <ul class="tier-perks">
+                    <li><i class="fas fa-check"></i> Daily floral offerings</li>
+                    <li><i class="fas fa-check"></i> Your name in daily prayers</li>
+                    <li><i class="fas fa-check"></i> Digital blessing certificate</li>
+                </ul>
+                <button class="btn-tier">Select This Seva</button>
+            </div>
+
+            <div class="tier-card featured-tier reveal-up" style="--d:0.1s" onclick="selectTier(5116)">
+                <div class="tier-ribbon">Most Chosen 🙏</div>
+                <div class="tier-emoji">🍛</div>
+                <div class="tier-amt gold-text">₹5,116</div>
+                <h3 class="tier-name en">Annadanam Support</h3>
+                <h3 class="tier-name te hidden">అన్నదాన మద్దతు</h3>
+                <ul class="tier-perks">
+                    <li><i class="fas fa-check"></i> Feeds 50 devotees for a day</li>
+                    <li><i class="fas fa-check"></i> Special mention in Mahayagnam</li>
+                    <li><i class="fas fa-check"></i> Digital blessing certificate</li>
+                    <li><i class="fas fa-check"></i> Exclusive event updates</li>
+                </ul>
+                <button class="btn-tier-gold">Select This Seva</button>
+            </div>
+
+            <div class="tier-card reveal-up" style="--d:0.2s" onclick="selectTier(10116)">
+                <div class="tier-emoji">📚</div>
+                <div class="tier-amt">₹10,116</div>
+                <h3 class="tier-name en">Vidyadanam</h3>
+                <h3 class="tier-name te hidden">విద్యాదానం</h3>
+                <ul class="tier-perks">
+                    <li><i class="fas fa-check"></i> Supports Vedic students</li>
+                    <li><i class="fas fa-check"></i> Named gurukula sponsor</li>
+                    <li><i class="fas fa-check"></i> Digital blessing certificate</li>
+                    <li><i class="fas fa-check"></i> Priority darshan at events</li>
+                </ul>
+                <button class="btn-tier">Select This Seva</button>
+            </div>
+        </div>
+
+        <!-- Custom Donation -->
+        <div class="custom-donate reveal-up">
+            <h3 class="en">Custom Donation Amount</h3>
+            <h3 class="te hidden">మీ ఇష్టమైన మొత్తం</h3>
+            <div class="custom-input-row">
+                <span class="rupee-prefix">₹</span>
+                <input type="number" id="customAmt" placeholder="Enter amount..." min="100">
+                <button class="btn-gold" onclick="openCustomDonate()">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span class="en">Donate</span>
+                    <span class="te hidden">దానం</span>
+                </button>
+            </div>
+            <div class="quick-amts">
+                <button onclick="setCustom(500)">₹500</button>
+                <button onclick="setCustom(1116)">₹1,116</button>
+                <button onclick="setCustom(2100)">₹2,100</button>
+                <button onclick="setCustom(5116)">₹5,116</button>
+                <button onclick="setCustom(10116)">₹10,116</button>
+                <button onclick="setCustom(21000)">₹21,000</button>
+            </div>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="payment-box reveal-up">
+            <h3 class="en">Payment Options</h3>
+            <div class="pay-tabs">
+                <button class="pay-tab active" onclick="switchTab(this,'upiContent')">
+                    <i class="fas fa-qrcode"></i> UPI / QR
+                </button>
+                <button class="pay-tab" onclick="switchTab(this,'bankContent')">
+                    <i class="fas fa-university"></i> Bank Transfer
+                </button>
+                <button class="pay-tab" onclick="switchTab(this,'infoContent')">
+                    <i class="fas fa-info-circle"></i> More Info
+                </button>
+            </div>
+
+            <div class="pay-content" id="upiContent">
+                <div class="upi-wrap">
+                    <div class="qr-box">
+                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#FDF6E3" rx="8"/>
+                            <rect x="12" y="12" width="66" height="66" fill="none" stroke="#1a0a00" stroke-width="9" rx="4"/>
+                            <rect x="26" y="26" width="38" height="38" fill="#1a0a00" rx="2"/>
+                            <rect x="122" y="12" width="66" height="66" fill="none" stroke="#1a0a00" stroke-width="9" rx="4"/>
+                            <rect x="136" y="26" width="38" height="38" fill="#1a0a00" rx="2"/>
+                            <rect x="12" y="122" width="66" height="66" fill="none" stroke="#1a0a00" stroke-width="9" rx="4"/>
+                            <rect x="26" y="136" width="38" height="38" fill="#1a0a00" rx="2"/>
+                            <rect x="88" y="12" width="24" height="10" fill="#1a0a00"/>
+                            <rect x="88" y="32" width="12" height="24" fill="#1a0a00"/>
+                            <rect x="12" y="88" width="24" height="12" fill="#1a0a00"/>
+                            <rect x="122" y="88" width="12" height="24" fill="#1a0a00"/>
+                            <rect x="88" y="88" width="24" height="24" fill="#1a0a00"/>
+                            <rect x="122" y="122" width="66" height="22" fill="#1a0a00" rx="2"/>
+                            <rect x="122" y="156" width="34" height="32" fill="#1a0a00" rx="2"/>
+                            <rect x="166" y="144" width="22" height="12" fill="#1a0a00"/>
+                            <text x="100" y="193" text-anchor="middle" font-size="9" fill="#C9A84C" font-family="sans-serif">UPI QR — Add Your UPI ID</text>
+                        </svg>
+                        <p class="qr-label en">Scan & Pay Instantly</p>
+                        <p class="qr-uid"><strong>UPI ID:</strong> <span id="upiIdText">[To be added by client]</span></p>
+                    </div>
+                    <div class="upi-right">
+                        <p class="en">Pay using any UPI app on your phone</p>
+                        <div class="upi-apps">
+                            <div class="upi-app"><i class="fas fa-mobile-alt"></i> PhonePe</div>
+                            <div class="upi-app"><i class="fas fa-mobile-alt"></i> GPay</div>
+                            <div class="upi-app"><i class="fas fa-mobile-alt"></i> Paytm</div>
+                            <div class="upi-app"><i class="fas fa-mobile-alt"></i> BHIM</div>
+                        </div>
+                        <p class="upi-note en">After payment, WhatsApp your transaction ID to receive your blessing certificate.</p>
+                        <a href="https://wa.me/917032876425" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Share Transaction
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pay-content hidden" id="bankContent">
+                <div class="bank-table">
+                    <div class="bank-row">
+                        <span class="bk-label">Account Name</span>
+                        <span class="bk-val" id="bkName">Sri Ashtakshari Ashramamu</span>
+                        <button class="copy-btn" onclick="copyField('bkName')" title="Copy"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <div class="bank-row">
+                        <span class="bk-label">Account Number</span>
+                        <span class="bk-val" id="bkAccNo">[To be added from pamphlet]</span>
+                        <button class="copy-btn" onclick="copyField('bkAccNo')" title="Copy"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <div class="bank-row">
+                        <span class="bk-label">IFSC Code</span>
+                        <span class="bk-val" id="bkIFSC">[To be added from pamphlet]</span>
+                        <button class="copy-btn" onclick="copyField('bkIFSC')" title="Copy"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <div class="bank-row">
+                        <span class="bk-label">Bank & Branch</span>
+                        <span class="bk-val" id="bkBank">[To be added from pamphlet]</span>
+                    </div>
+                </div>
+                <p class="bank-note en">After transfer, WhatsApp your transaction screenshot to <a href="https://wa.me/917032876425" target="_blank">+91 70328 76425</a> to receive your blessing certificate.</p>
+            </div>
+
+            <div class="pay-content hidden" id="infoContent">
+                <div class="info-items">
+                    <div class="info-item-pay">
+                        <i class="fas fa-certificate"></i>
+                        <p class="en">All donors receive a digital blessing certificate from Swami</p>
+                    </div>
+                    <div class="info-item-pay">
+                        <i class="fas fa-scroll"></i>
+                        <p class="en">Your name is included in special prayers during the 10-day Mahayagnam</p>
+                    </div>
+                    <div class="info-item-pay">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+917032876425">+91 70328 76425</a></p>
+                    </div>
+                    <div class="info-item-pay">
+                        <i class="fab fa-whatsapp"></i>
+                        <p><a href="https://wa.me/917032876425" target="_blank">WhatsApp Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ DONORS WALL -->
+<section class="section donors-section">
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">Our Sacred Community</p>
+            <h2 class="sec-title en">Blessed Contributors</h2>
+            <h2 class="sec-title te hidden">పుణ్యాత్ముల దానం</h2>
+            <p class="sec-subtitle en">350+ devoted souls have already joined this mission</p>
+        </div>
+        <div class="donors-wall">
+            <div class="donor-pill">Ravi Kumar · Hyderabad</div>
+            <div class="donor-pill">Lakshmi Devi · Vijayawada</div>
+            <div class="donor-pill">Srinivas Rao · Chennai</div>
+            <div class="donor-pill">Anitha · Tirupati</div>
+            <div class="donor-pill">Venkata Reddy · Bangalore</div>
+            <div class="donor-pill">Padmavathi · Vizag</div>
+            <div class="donor-pill">Ramaiah · Guntur</div>
+            <div class="donor-pill">Sunita Devi · Mumbai</div>
+            <div class="donor-pill">Karthik Sharma · Hyderabad</div>
+            <div class="donor-pill">Sarada Devi · Nellore</div>
+            <div class="donor-pill">Prasad · Rajahmundry</div>
+            <div class="donor-pill">Geetha Lakshmi · Kakinada</div>
+            <div class="donor-pill">Mohan Rao · Vizag</div>
+            <div class="donor-pill">Sujatha · Eluru</div>
+            <div class="donor-pill">Narayana Das · Tirupati</div>
+            <div class="donor-pill">+ 335 more devotees</div>
+        </div>
+        <div class="join-wall-row">
+            <p class="en">Your name can be here too.</p>
+            <button class="btn-gold" onclick="openDonateModal()">
+                <i class="fas fa-hand-holding-heart"></i> Join This Sacred Community
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ SOCIAL PROOF / TESTIMONIALS -->
+<section class="section proof-section" id="proof">
+    <div class="container">
+        <div class="proof-grid">
+            <div class="testimonials reveal-left">
+                <h3 class="proof-h en"><i class="fas fa-quote-left"></i> Devotee Experiences</h3>
+                <h3 class="proof-h te hidden">భక్తుల అనుభవాలు</h3>
+                <div class="testi-slider">
+                    <div class="testi-card" id="testiText">
+                        "Attending the Sasti Poorthi Abhishekam was a life-changing experience. Swami's grace brings immense peace into our lives."
+                        <span class="testi-author">— Srinivas R., Hyderabad</span>
+                    </div>
+                </div>
+            </div>
+            <div class="media-coverage reveal-right">
+                <h3 class="proof-h en"><i class="fas fa-newspaper"></i> Media & Dignitaries</h3>
+                <h3 class="proof-h te hidden">మీడియా & ప్రముఖులు</h3>
+                <div class="media-grid">
+                    <div class="m-card">
+                        <i class="fas fa-users m-icon"></i>
+                        <p>Visited by former ministers & MPs during procession</p>
+                    </div>
+                    <div class="m-card">
+                        <i class="fas fa-camera m-icon"></i>
+                        <p>Extensive Press Coverage on Pamphlet Release</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ VOLUNTEER & NEWSLETTER -->
+<section class="section seva-section" id="volunteer">
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">Be Part of It</p>
+            <h2 class="sec-title en">Join the Seva</h2>
+            <h2 class="sec-title te hidden">సేవలో భాగస్వాములవ్వండి</h2>
+        </div>
+        <div class="seva-grid">
+            <div class="seva-card reveal-left">
+                <div class="seva-icon"><i class="fas fa-hands-helping"></i></div>
+                <h3 class="en">Volunteer for Mahayagnam</h3>
+                <h3 class="te hidden">మహాయజ్ఞానికి స్వయంసేవకుడిగా</h3>
+                <p class="en">Join the Ullipallem Maha Yagnam seva. We need volunteers for Annadanam, decoration, logistics, and reception.</p>
+                <form class="seva-form" onsubmit="submitVolunteer(event)">
+                    <input type="text" placeholder="Your Name *" required>
+                    <input type="tel" placeholder="WhatsApp Number *" required>
+                    <select>
+                        <option value="">Select Seva Type</option>
+                        <option>Annadanam Seva</option>
+                        <option>Decoration & Floral</option>
+                        <option>Logistics & Transport</option>
+                        <option>Reception & Hospitality</option>
+                        <option>Photography / Media</option>
+                    </select>
+                    <button type="submit" class="btn-gold full-w">
+                        <i class="fas fa-hands-helping"></i> Register for Seva
+                    </button>
+                </form>
+            </div>
+            <div class="seva-card reveal-right">
+                <div class="seva-icon"><i class="fas fa-bell"></i></div>
+                <h3 class="en">Stay Connected</h3>
+                <h3 class="te hidden">తాజా సమాచారం పొందండి</h3>
+                <p class="en">Get Swami's messages, event updates, and seva opportunities directly on WhatsApp.</p>
+                <form class="seva-form" onsubmit="submitNewsletter(event)">
+                    <input type="text" placeholder="Your Name *" required>
+                    <input type="tel" placeholder="WhatsApp Number *" required>
+                    <input type="email" placeholder="Email (optional)">
+                    <button type="submit" class="btn-gold full-w">
+                        <i class="fab fa-whatsapp"></i> Subscribe to Updates
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ CONTACT -->
+<section class="section contact-section" id="contact">
+    <div class="container">
+        <div class="section-head">
+            <p class="sec-label">Visit & Connect</p>
+            <h2 class="sec-title en">Sri Ashtakshari Ashramamu</h2>
+            <h2 class="sec-title te hidden">శ్రీ అష్టక్షరీ ఆశ్రమము</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal-left">
+                <div class="c-item">
+                    <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="c-text">
+                        <strong>Ashram Address</strong>
+                        <p>Sri Ashtakshari Ashramamu<br>Gurukul Road, Vidyanagarpuram<br>Vijayawada — 12, Andhra Pradesh</p>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="c-icon"><i class="fas fa-phone"></i></div>
+                    <div class="c-text">
+                        <strong>Phone</strong>
+                        <a href="tel:+917032876425">+91 70328 76425</a>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="c-text">
+                        <strong>Email</strong>
+                        <a href="mailto:srikrishnatiles12@gmail.com">srikrishnatiles12@gmail.com</a>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div class="c-text">
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/917032876425" target="_blank">Message Us on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="c-socials">
+                    <a href="#" class="c-social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="c-social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/917032876425" class="c-social-btn" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-map reveal-right">
+                <iframe
+                    src="https://maps.google.com/maps?q=Gurukul+Road+Vidyanagarpuram+Vijayawada+Andhra+Pradesh&output=embed"
+                    allowfullscreen loading="lazy" title="Ashram Location">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ FOOTER -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <span class="footer-om">ॐ</span>
+            <div>
+                <h3>Sri Ashtakshari Ashramamu</h3>
+                <p>Gurukul Road, Vidyanagarpuram, Vijayawada — 12</p>
+                <p>+91 70328 76425</p>
+            </div>
+        </div>
+        <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <a href="#about">About Swami</a>
+            <a href="#mission">Our Mission</a>
+            <a href="#events">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#donate">Donate</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-cause">
+            <h4 class="en">The Mission</h4>
+            <p class="en">Supporting world peace, Annadanam, Vidyadanam, and the preservation of Sri Vaishnava Sampradaya through sacred service.</p>
+            <button class="btn-gold mt-1" onclick="openDonateModal()">🙏 Donate Now</button>
+        </div>
+    </div>
+    <div class="footer-tagline-bar">
+        <p class="telugu-text">"సర్వేజనాః సుఖినో భవంతు"</p>
+        <p class="en">May All Beings Be Happy</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Sri Ashtakshari Ashramamu. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/917032876425" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════ FLOATING BUTTONS -->
+<a href="https://wa.me/917032876425" class="float-whatsapp" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<button class="float-donate" id="floatDonate" onclick="openDonateModal()">
+    <i class="fas fa-hand-holding-heart"></i>
+    <span>Donate</span>
+</button>
+
+<!-- ═══════════════════════════════════════════════════════ DONATE MODAL -->
+<div class="modal-overlay" id="donateModal" onclick="modalOverlayClick(event)">
+    <div class="modal-box">
+        <button class="modal-close-btn" onclick="closeDonateModal()"><i class="fas fa-times"></i></button>
+        <div class="modal-head">
+            <div class="modal-om">ॐ</div>
+            <h2 class="en">Make a Sacred Contribution</h2>
+            <h2 class="te hidden">పవిత్ర సహకారం ఇవ్వండి</h2>
+            <p class="en">For Ullipallem Ashtakshari Maha Yagnam</p>
+        </div>
+        <div class="modal-amounts">
+            <p class="en">Choose an amount:</p>
+            <div class="modal-amt-btns">
+                <button class="m-amt" onclick="setModalAmt(1116)">₹1,116</button>
+                <button class="m-amt selected" onclick="setModalAmt(5116)">₹5,116</button>
+                <button class="m-amt" onclick="setModalAmt(10116)">₹10,116</button>
+                <button class="m-amt" onclick="setModalAmt(21000)">₹21,000</button>
+            </div>
+            <div class="modal-custom-row">
+                <span>₹</span>
+                <input type="number" id="modalAmtInput" value="5116" min="100">
+                <span class="en">Custom</span>
+            </div>
+            <div class="donate-extra-opts">
+                <label class="d-check">
+                    <input type="checkbox" id="isRecurring"> 
+                    <span class="en">Make this a Monthly Recurring Donation</span>
+                    <span class="te hidden">ప్రతి నెల దానం చేయండి</span>
+                </label>
+                <div class="in-memory">
+                    <input type="text" id="memoryOf" placeholder="Donate in memory of / in honour of (Optional)">
+                </div>
+            </div>
+        </div>
+        <div class="modal-pay-area">
+            <div class="modal-qr-small">
+                <svg width="130" height="130" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="200" height="200" fill="#FDF6E3" rx="8"/>
+                    <rect x="12" y="12" width="66" height="66" fill="none" stroke="#1a0a00" stroke-width="9" rx="4"/>
+                    <rect x="26" y="26" width="38" height="38" fill="#1a0a00" rx="2"/>
+                    <rect x="122" y="12" width="66" height="66" fill="none" stroke="#1a0a00" stroke-width="9" rx="4"/>
+                    <rect x="136" y="26" width="38" height="38" fill="#1a0a00" rx="2"/>
+                    <rect x="12" y="122" width="66" height="66" fill="none" stroke="#1a0a00" stroke-width="9" rx="4"/>
+                    <rect x="26" y="136" width="38" height="38" fill="#1a0a00" rx="2"/>
+                    <rect x="88" y="88" width="24" height="24" fill="#1a0a00"/>
+                </svg>
+                <p>Scan to Pay</p>
+            </div>
+            <div class="modal-pay-info">
+                <p><strong>UPI ID:</strong> [to be added]</p>
+                <p class="en">or bank transfer</p>
+                <a href="#donate" class="btn-ghost-sm" onclick="closeDonateModal(); setTimeout(()=>switchTab(document.querySelector('.pay-tab:nth-child(2)'),'bankContent'),400)">View Bank Details</a>
+            </div>
+        </div>
+        <button class="btn-gold full-w" onclick="confirmDonation()">
+            <i class="fas fa-check-circle"></i>
+            <span class="en">I Have Made the Donation</span>
+            <span class="te hidden">నేను దానం చేశాను</span>
+        </button>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ EXIT INTENT POPUP -->
+<div class="exit-overlay" id="exitPopup">
+    <div class="exit-box">
+        <button class="exit-close-btn" onclick="closeExitPopup()"><i class="fas fa-times"></i></button>
+        <div class="exit-om">ॐ</div>
+        <h2 class="en">One Moment — Before You Leave</h2>
+        <p class="en">108 Homa Gundas are being lit at Ullipallem. Even the smallest offering becomes part of this sacred Mahayagnam.</p>
+        <p class="exit-quote">"Sarve Janah Sukhino Bhavantu"</p>
+        <div class="exit-amt-btns">
+            <button onclick="exitDonate(1116)">₹1,116</button>
+            <button class="exit-featured-btn" onclick="exitDonate(5116)">₹5,116</button>
+            <button onclick="exitDonate(10116)">₹10,116</button>
+        </div>
+        <button class="btn-gold full-w" onclick="proceedExit()">
+            <i class="fas fa-hand-holding-heart"></i>
+            <span class="en">Yes, I Want to Contribute</span>
+        </button>
+        <button class="exit-skip-btn" onclick="closeExitPopup()">Continue browsing</button>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ THANK YOU POPUP -->
+<div class="thankyou-overlay" id="thankYouPopup">
+    <div class="thankyou-box">
+        <div class="ty-om">ॐ</div>
+        <h2 class="en">Jai Srimannarayana! 🙏</h2>
+        <p class="telugu-text">జై శ్రీమన్నారాయణ!</p>
+        <p class="en">Your contribution has been received. May Swami's boundless blessings shower upon you and your entire family.</p>
+        <div class="ty-btns">
+            <button class="btn-gold" onclick="downloadCertificate()">
+                <i class="fas fa-download"></i> Download Blessing Certificate
+            </button>
+            <button class="btn-whatsapp" onclick="shareWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Share on WhatsApp
+            </button>
+            <button class="exit-skip-btn" onclick="closeThankYou()">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- TOAST NOTIFIER -->
+<div id="toastContainer" class="toast-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
