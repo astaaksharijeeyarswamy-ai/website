@@ -682,3 +682,159 @@ input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 6px; cur
 .toast.hide { animation: toastOut 0.3s forwards; }
 @keyframes toastIn { 0% { opacity: 0; transform: translateY(30px) scale(0.9); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes toastOut { 0% { opacity: 1; transform: translateY(0) scale(1); } 100% { opacity: 0; transform: translateY(30px) scale(0.9); } }
+
+/* ========================================================================= */
+/*                           MOBILE RESPONSIVENESS                           */
+/* ========================================================================= */
+
+@media (max-width: 991px) {
+    .about-grid, .sasti-grid, .fundraiser-wrap, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .proof-grid, .seva-grid, .fund-chart-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .sec-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar & Mobile Menu */
+    .nav-links, .nav-actions .btn-donate-nav {
+        display: none;
+    }
+    .hamburger-btn {
+        display: flex;
+    }
+    .nav-logo-text {
+        font-size: 1rem;
+    }
+    .nav-om {
+        font-size: 22px;
+    }
+    
+    /* Layouts */
+    .section {
+        padding: 60px 0;
+    }
+    
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Typography & Sizing */
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .sec-title {
+        font-size: 1.8rem;
+    }
+    
+    .swami-full-title {
+        font-size: 1.5rem;
+    }
+    
+    .s-num, .cd-num, .fund-num, .tier-amt, .impact-amt {
+        font-size: 2rem;
+    }
+    
+    .cd-grid {
+        flex-wrap: wrap;
+    }
+    
+    .cd-colon {
+        display: none;
+    }
+    
+    .cd-unit {
+        min-width: 80px;
+        padding: 10px;
+    }
+    
+    /* Animations & Decorative Elements */
+    .hero-mandala {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        opacity: 0.1; /* Reduce opacity on mobile */
+    }
+    
+    .r2 {
+        margin: 50px;
+    }
+    
+    .r3 {
+        margin: 100px;
+    }
+    
+    .ticker-label {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    .ticker-inner {
+        font-size: 13px;
+    }
+    
+    /* Modals & Forms */
+    .modal-box, .exit-box, .thankyou-box {
+        padding: 20px;
+    }
+    
+    .modal-pay-area {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .r-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .g-item.tall {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    
+    .fund-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
